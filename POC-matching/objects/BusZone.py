@@ -1,8 +1,9 @@
 class BusZone:
-    def __init__(self, _bz_id, _initial_capacity):
+    def __init__(self, _bz_id, _initial_capacity, _coordinates=None):
         self._bz_id = _bz_id
         self._initial_capacity = _initial_capacity
         self._current_capacity = _initial_capacity
+        self._coordinates = _coordinates
 
     def get_id(self):
         return self._bz_id

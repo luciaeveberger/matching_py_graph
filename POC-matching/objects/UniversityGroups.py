@@ -17,4 +17,4 @@ class UniversityGroups:
         return self._bus_id
 
     def __str__(self):
-        return "university: %s, bus_id: %s" % (self._university, self._bus_id)
+        return "university: %s, bus_id: %s, capacity: %s" % (self._university, self._bus_id, self._participant_count)
