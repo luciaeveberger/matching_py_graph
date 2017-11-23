@@ -7,7 +7,7 @@ def create_participants():
     print('total people', sum(external_requests['number']))
     university_list = []
     for index, row in external_requests.iterrows():
-        university = UniversityGroups(row['university'], row['number'])
+        university = UniversityGroups(row.count(), row['university'], row['number'])
         university_list.append(university)
     sorted_university = sorted(university_list, key=lambda x: x.get_participant_capacity(), reverse=True)
     return sorted_university
