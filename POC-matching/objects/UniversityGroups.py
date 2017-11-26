@@ -8,7 +8,7 @@ class UniversityGroups:
         self._participant_count = _participant_count
         self._bus_id = 0
         self._list_of_participants = list()
-        self.create_participant_list()
+        self._division_factor = 1
 
     def create_participant_list(self):
         for i in range(self._participant_count):
@@ -29,6 +29,7 @@ class UniversityGroups:
         return self._participant_count
 
     def set_bus_id(self, bus_id):
+        self.create_participant_list()
         self._bus_id = bus_id
         for participant in self._list_of_participants:
             participant._bus_id = bus_id

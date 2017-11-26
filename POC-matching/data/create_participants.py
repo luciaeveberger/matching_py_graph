@@ -11,3 +11,7 @@ def create_participants():
         university_list.append(university)
     sorted_university = sorted(university_list, key=lambda x: x.get_participant_capacity(), reverse=True)
     return sorted_university
+
+#
+# def create_replacement_participant(remainder_size):
+#     UniversityGroups(200, )

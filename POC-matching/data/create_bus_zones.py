@@ -3,8 +3,8 @@ from objects.BusZone import BusZone
 
 def create_dummy_data():
     bus_zone = []
-    bz1 = BusZone(1, 110)
-    bz2 = BusZone(2, 90)
+    bz1 = BusZone(1, 150)
+    bz2 = BusZone(2, 29)
     bz3 = BusZone(3, 49)
     bus_zone.append(bz1)
     bus_zone.append(bz2)

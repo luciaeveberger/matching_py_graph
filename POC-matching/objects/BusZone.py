@@ -16,3 +16,6 @@ class BusZone:
         #print("the current bus id", self._bz_id)
         #print("the current capacity is", self._current_capacity)
 
+    def __str__(self):
+        return "bus_id: %s, bus_capacity: %s" % (self._bz_id, self._current_capacity)
+
