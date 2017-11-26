@@ -6,7 +6,7 @@ sorted_bus = create_dummy_data()
 sorted_university = create_participants()
 
 
-def inital_bus_matcher():
+def initial_matcher():
     for uni in sorted_university:
         for bus in sorted_bus:
             if bus.get_capacity() >= uni.get_participant_capacity():
@@ -43,7 +43,7 @@ def match_unassigned():
     return total_remaining_buses
 
 
-def dirivitive_match():
+def derivitive_match():
     unassigned_buses = match_unassigned()
     unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
     print(unassigned_universities)
@@ -58,9 +58,6 @@ def dirivitive_match():
     total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
     print('total of open spots (bus)', total_unassigned_bz)
     print('toal people', total_unassigned_people)
-
-
-
 
 
 def optimal_combinations(bus_zone, uni_list):
@@ -80,7 +77,7 @@ def optimal_combinations(bus_zone, uni_list):
 
 if __name__ == "__main__":
     # collects sorted data
-    inital_bus_matcher()
-    dirivitive_match()
+    initial_matcher()
+    derivitive_match()
 
 
