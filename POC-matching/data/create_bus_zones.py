@@ -14,9 +14,14 @@ def read_from_source():
 def create_accommodations_objects():
     accommodations = read_from_source()
     accommodations_list = list()
+    count = 1
     for index, row in accommodations.iterrows():
-        university = Accommodation(row['buz_zone'], row.count(), row['capacity'], row['name'])
+        university = Accommodation(row['buz_zone'], row['capacity'], count, row['name'])
         accommodations_list.append(university)
+        count = count + 1
+
+    sorted_accomodation_lis = sorted(accommodations_list, key=lambda x: x.get_capacity(), reverse=True)
+    return sorted_accomodation_lis
 
 
 def create_dummy_data():

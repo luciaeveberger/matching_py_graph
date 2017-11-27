@@ -7,6 +7,8 @@ class UniversityGroups:
         self._university = _university
         self._participant_count = _participant_count
         self._bus_id = 0
+        self._accommodation_id = 0
+        self._accommodation_name = ''
         self._list_of_participants = list()
         self._division_factor = 1
 
@@ -34,6 +36,9 @@ class UniversityGroups:
         for participant in self._list_of_participants:
             participant._bus_id = bus_id
 
+    def set_accommodation_is(self,acc_id):
+        self._accommodation_id = acc_id
+
     def get_bus_id(self):
         return self._bus_id
 
@@ -41,4 +46,5 @@ class UniversityGroups:
         return self._list_of_participants
 
     def __str__(self):
-        return "university: %s, bus_id: %s, capacity: %s" % (self._university, self._bus_id, self._participant_count)
+        return "university: %s, bus_id: %s, capacity: %s, accom_id: %s" % \
+               (self._university, self._bus_id, self._participant_count, self._accommodation_id)

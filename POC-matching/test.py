@@ -1,9 +1,11 @@
 from data.create_bus_zones import create_dummy_data
+from data.create_bus_zones import create_accommodations_objects
 from data.create_participants import create_participants
-from objects.UniversityGroups import UniversityGroups
+
 
 sorted_bus = create_dummy_data()
 sorted_university = create_participants()
+file = open('results/testfile.txt', 'w')
 
 
 def initial_matcher():
@@ -57,8 +59,19 @@ def derivitive_match():
     total_unassigned_bz = sum(c.get_capacity() for c in available_buses)
     unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
     total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
+    assigned_unis = [u for u in sorted_university if u.get_bus_id() != 0]
+
+
+    file.write("Assigned unis: \n")
+    for val in assigned_unis:
+        file.write(str(val) + '\n')
+
     print('3rd ITERATIONS: total of open spots (bus)', total_unassigned_bz)
     print('3rd ITERATIONS: total people', total_unassigned_people)
+
+    file.write("unassigned unis: \n")
+    for val in unassigned_universities:
+        file.write(str(val) + '\n')
 
 
 def optimal_combinations(bus_zone, uni_list):
@@ -75,9 +88,31 @@ def optimal_combinations(bus_zone, uni_list):
             bus_zone.reduce_capacity(uni.get_participant_capacity())
 
 
+def helper_set_accomodations(acc_assigned, bus_assigned_universities):
+    for spot in acc_assigned:
+        for uni in bus_assigned_universities:
+            for val in uni.get_participant_list():
+                if val.get_acc_id() == 0 and spot.get_capacity() > 0:
+                    acc_details = {'id': spot.get_acc_id(), 'name': spot.get_name(), 'bus_zone': spot.get_bus_id()}
+                    val.set_accomondation(acc_details)
+                    spot.reduce_capacity(1)
+
+    for uni in bus_assigned_universities:
+        for val in uni.get_participant_list():
+            file.write(str(val) + '\n')
+
+
+def set_accommodations():
+    acc = create_accommodations_objects()
+    for i in range(1, 4):
+        bus_assigned_universities = [u for u in sorted_university if u.get_bus_id() == i]
+        acc_assigned = [u for u in acc if u.get_bus_id() == i]
+        helper_set_accomodations(acc_assigned, bus_assigned_universities)
+
 if __name__ == "__main__":
     # collects sorted data
     initial_matcher()
     derivitive_match()
+    set_accommodations()
 
 
