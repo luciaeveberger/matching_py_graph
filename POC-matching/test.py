@@ -61,7 +61,6 @@ def derivitive_match():
 
 
 def optimal_combinations(bus_zone, uni_list):
-    capacity = bus_zone.get_capacity()
     sorted_unis = sorted(uni_list, key=lambda x: x.get_participant_capacity(), reverse=True)
 
     sorted_unis[0].set_bus_id(bus_zone.get_id())
