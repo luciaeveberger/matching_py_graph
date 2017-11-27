@@ -53,11 +53,12 @@ def derivitive_match():
         if possible_unis:
             optimal_combinations(bus, possible_unis)
     available_buses = [b for b in sorted_bus if b.get_capacity() > 0]
+
     total_unassigned_bz = sum(c.get_capacity() for c in available_buses)
     unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
     total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
-    print('total of open spots (bus)', total_unassigned_bz)
-    print('toal people', total_unassigned_people)
+    print('3rd ITERATIONS: total of open spots (bus)', total_unassigned_bz)
+    print('3rd ITERATIONS: total people', total_unassigned_people)
 
 
 def optimal_combinations(bus_zone, uni_list):

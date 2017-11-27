@@ -1,10 +1,11 @@
 class Accommodation:
-    def __init__(self, _bz_id, _initial_capacity, _name, _coordinates=None):
+    def __init__(self, _bz_id, _initial_capacity,_acc_id, _name, _coordinates=None):
         self._bz_id = _bz_id
+        self._acc_id = _acc_id
         self._initial_capacity = _initial_capacity
         self._name = _name
 
-    def get_id(self):
+    def get_bus_id(self):
         return self._bz_id
 
     def get_capacity(self):
