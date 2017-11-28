@@ -1,0 +1,140 @@
+{"data":{
+      "accommodations":[
+         {
+            "name":"RIGLER",
+            "capacity":20,
+            "buz_zone":1
+         },
+         {
+            "name":"UNICITY",
+            "capacity":27,
+            "buz_zone":1
+         },
+         {
+            "name":"SALETTA",
+            "capacity":33,
+            "buz_zone":1
+         },
+         {
+            "name":"HAUSSB",
+            "capacity":24,
+            "buz_zone":1
+         },
+         {
+            "name":"SALEETA_HSB",
+            "capacity":18,
+            "buz_zone":1
+         },
+         {
+            "name":"RAINERUM",
+            "capacity":6,
+            "buz_zone":1
+         },
+         {
+            "name":"GALILEI",
+            "capacity":78,
+            "buz_zone":2
+         },
+         {
+            "name":"CARDUCCI",
+            "capacity":60,
+            "buz_zone":2
+         },
+         {
+            "name":"HSB",
+            "capacity":24,
+            "buz_zone":3
+         }
+      ],
+      "participants":[
+         {
+            "university":"Universita di Bologna",
+            "capacity":36
+         },
+         {
+            "university":"Universita di Genova",
+            "capacity":23
+         },
+         {
+            "university":"Universita di Sassari",
+            "capacity":15
+         },
+         {
+            "university":"Universita di Verona",
+            "capacity":21
+         },
+         {
+            "university":"Universita di Milano",
+            "capacity":11
+         },
+         {
+            "university":"Universita di Trento",
+            "capacity":28
+         },
+         {
+            "university":"Universita di Torino",
+            "capacity":11
+         },
+         {
+            "university":"TU Munich",
+            "capacity":12
+         },
+         {
+            "university":"LMU",
+            "capacity":12
+         },
+         {
+            "university":"ESB",
+            "capacity":25
+         },
+         {
+            "university":"Frankfurt School",
+            "capacity":20
+         },
+         {
+            "university":"Nordakademie",
+            "capacity":13
+         },
+         {
+            "university":"WHU",
+            "capacity":41
+         },
+         {
+            "university":"Goethe University",
+            "capacity":10
+         },
+         {
+            "university":"Frankfurt am Main",
+            "capacity":18
+         },
+         {
+            "university":"Zeppelin University",
+            "capacity":15
+         },
+         {
+            "university":"Johannes Gutenberg Universitat Mainz",
+            "capacity":16
+         },
+         {
+            "university":"University of Bayreuth",
+            "capacity":24
+         },
+         {
+            "university":"University of Tuebingen",
+            "capacity":6
+         },
+         {
+            "university":"Maastricht University",
+            "capacity":18
+         },
+         {
+            "university":"HEC Lausanne",
+            "capacity":21
+         },
+         {
+            "university":"Uni Salzburg",
+            "capacity":10
+         }
+      ]
+   }
+}

@@ -46,5 +46,5 @@ class UniversityGroups:
         return self._list_of_participants
 
     def __str__(self):
-        return "university: %s, bus_id: %s, capacity: %s, accom_id: %s" % \
+        return "university: %s,bus_id: %s,capacity: %s,accom_id: %s" % \
                (self._university, self._bus_id, self._participant_count, self._accommodation_id)

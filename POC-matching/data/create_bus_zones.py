@@ -11,17 +11,25 @@ def read_from_source():
     return accomodations
 
 
-def create_accommodations_objects():
-    accommodations = read_from_source()
+def create_accommodations_objects(accommodations):
+    accommodations = pd.DataFrame(accommodations)
     accommodations_list = list()
     count = 1
     for index, row in accommodations.iterrows():
-        university = Accommodation(row['buz_zone'], row['capacity'], count, row['name'])
+        university = Accommodation(row['buz_zone'], int(row['capacity']), count, row['name'])
         accommodations_list.append(university)
         count = count + 1
+    accommodations_grouped_by_sum = accommodations.groupby('buz_zone').agg('sum')
+    bus_zone = list()
 
-    sorted_accomodation_lis = sorted(accommodations_list, key=lambda x: x.get_capacity(), reverse=True)
-    return sorted_accomodation_lis
+    for index, row in accommodations_grouped_by_sum.iterrows():
+        bz1 = BusZone(int(index), int(row['capacity']))
+        bus_zone.append(bz1)
+
+    sorted_bus = sorted(bus_zone, key=lambda x: x.get_capacity(), reverse=True)
+
+    sorted_accomodation_list = sorted(accommodations_list, key=lambda x: x.get_capacity(), reverse=True)
+    return sorted_accomodation_list, sorted_bus
 
 
 def create_dummy_data():

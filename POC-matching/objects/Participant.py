@@ -15,6 +15,6 @@ class Participant:
         return self._accommondation_details
 
     def __str__(self):
-        return "university_id: %s, uni_name: %s,  bus_id %s, accomodation_details: %s" % \
+        return "university_id: %s,uni_name: %s,bus_id:%s,accommodation_details:%s" % \
                (self._university_id, self._university_name,
                 self._bus_id, self._accommondation_details)
