@@ -1,1 +1,1 @@
-web: gunicorn POC-matching:app --log-file -
+web: cd POC-matching && gunicorn app:app
