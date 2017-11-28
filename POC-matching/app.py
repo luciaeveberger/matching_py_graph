@@ -1,8 +1,12 @@
+#!flask/bin/python
+from flask import Flask
+
 from data.create_bus_zones import create_dummy_data
 from data.create_bus_zones import create_accommodations_objects
 from data.create_participants import create_participants
 
 
+app = Flask(__name__)
 sorted_bus = create_dummy_data()
 sorted_university = create_participants()
 file = open('results/testfile.txt', 'w')
@@ -109,10 +113,17 @@ def set_accommodations():
         acc_assigned = [u for u in acc if u.get_bus_id() == i]
         helper_set_accomodations(acc_assigned, bus_assigned_universities)
 
-if __name__ == "__main__":
-    # collects sorted data
+@app.route('/')
+def index():
     initial_matcher()
     derivitive_match()
     set_accommodations()
+    return "Hello, World!"
+
+
+if __name__ == "__main__":
+    # collects sorted data
+    app.run(debug=True)
+
 
 
