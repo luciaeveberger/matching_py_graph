@@ -53,8 +53,6 @@ def match_unassigned():
 def derivitive_match():
     unassigned_buses = match_unassigned()
     unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
-    #print(unassigned_universities)
-    #print(unassigned_buses)
     for bus in unassigned_buses:
         possible_unis = [u for u in sorted_university if u.get_bus_id() == 0 and u.get_participant_capacity() < bus.get_capacity()]
         if possible_unis:
@@ -67,14 +65,19 @@ def derivitive_match():
     assigned_unis = [u for u in sorted_university if u.get_bus_id() != 0]
     file.write('3rd ITERATIONS: total people' + str(total_unassigned_people))
     file.write("Unassigned busses:  \n")
+    unassigned_dict = {'unassigned_busses': [],
+                       'count_un_busses':total_unassigned_bz,
+                       'unassigned_unis': [],
+                       'count_unassigned_people': total_unassigned_people }
     for val in unassigned_buses:
         file.write(str(val) + '\n')
-
-
+        unassigned_dict['unassigned_busses'].append(str(val))
 
     file.write("unassigned unis: \n")
     for val in unassigned_universities:
         file.write(str(val) + '\n')
+        unassigned_dict['unassigned_unis'].append(str(val))
+    return unassigned_dict
 
 
 def optimal_combinations(bus_zone, uni_list):
@@ -98,7 +101,6 @@ def helper_set_accommodations(acc_assigned, bus_assigned_universities):
                     acc_details = {'id': spot.get_acc_id(), 'name': spot.get_name(), 'bus_zone': spot.get_bus_id()}
                     val.set_accomondation(acc_details)
                     spot.reduce_capacity(1)
-
 
 
 def set_accommodations():
@@ -126,9 +128,9 @@ def index():
     sorted_bus = sorted_groups[1]
     sorted_university = create_participants(data.get('data').get('participants'))
     initial_matcher()
-    derivitive_match()
+    unassigned_information = derivitive_match()
     final_set = set_accommodations()
-    json_block = {"data": final_set}
+    json_block = {'data': final_set, 'unassigned_data': unassigned_information}
     return json.dumps(json_block)
 
 
