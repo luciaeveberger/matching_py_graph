@@ -4,6 +4,7 @@ import json
 
 from data.create_bus_zones import create_accommodations_objects, create_WG_objects
 from data.create_participants import create_participants
+from objects.UniversityGroups import UniversityGroups
 
 
 app = Flask(__name__)
@@ -32,15 +33,11 @@ def match_unassigned():
     total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
     available_buses = [b for b in sorted_bus if b.get_capacity() > 0]
     total_unassigned_bz = sum(c.get_capacity() for c in available_buses)
-
-    print('count of unassigned', total_unassigned_people)
-    print('total of open spots (bus)', total_unassigned_bz)
     total_remaining_buses = list()
 
     for bus_spot in available_buses:
         for element in unassigned_universities:
             if bus_spot.get_capacity() == element.get_participant_capacity():
-                #print("I match", element,  "with", bus_spot.get_id(), "with the capacity", bus_spot.get_capacity())
                 element.set_bus_id(bus_spot.get_id())
                 unassigned_universities.remove(element)
                 bus_spot.reduce_capacity(element.get_participant_capacity())
@@ -52,7 +49,6 @@ def match_unassigned():
 
 def derivitive_match():
     unassigned_buses = match_unassigned()
-    unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
     for bus in unassigned_buses:
         possible_unis = [u for u in sorted_university if u.get_bus_id() == 0 and u.get_participant_capacity() < bus.get_capacity()]
         if possible_unis:
@@ -62,17 +58,22 @@ def derivitive_match():
     total_unassigned_bz = sum(c.get_capacity() for c in available_buses)
     unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
     total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
-    assigned_unis = [u for u in sorted_university if u.get_bus_id() != 0]
+    unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
     file.write('3rd ITERATIONS: total people' + str(total_unassigned_people))
     file.write("Unassigned busses:  \n")
 
     unassigned_dict = {'unassigned_busses': [],
-                       'count_un_busses':total_unassigned_bz,
+                       'count_un_busses': total_unassigned_bz,
                        'unassigned_unis': [],
                        'count_unassigned_people': total_unassigned_people }
     for val in unassigned_buses:
-        file.write(str(val) + '\n')
+
         unassigned_dict['unassigned_busses'].append(str(val))
+
+    for val in unassigned_universities:
+        print("I AM UNASSIGNED", val)
+        unassigned_dict['unassigned_unis'].append(str(val))
+
     return unassigned_dict
 
 
@@ -96,6 +97,7 @@ def helper_set_accommodations(acc_assigned, bus_assigned_universities):
                 if val.get_acc_id() == 0 and spot.get_capacity() > 0:
                     acc_details = {'id': spot.get_acc_id(), 'name': spot.get_name(), 'bus_zone': spot.get_bus_id()}
                     val.set_accomondation(acc_details)
+                    uni.set_accommodation_id(spot.get_acc_id())
                     spot.reduce_capacity(1)
 
 
@@ -104,7 +106,14 @@ def set_accommodations():
     for i in range(1, 4):
         bus_assigned_universities = [u for u in sorted_university if u.get_bus_id() == i]
         acc_assigned = [u for u in accommodation_list if u.get_bus_id() == i]
-        helper_set_accommodations(acc_assigned, bus_assigned_universities)
+        for spot in acc_assigned:
+            for uni in bus_assigned_universities:
+                for val in uni.get_participant_list():
+                    if val.get_acc_id() == 0 and spot.get_capacity() > 0:
+                        acc_details = {'id': spot.get_acc_id(), 'name': spot.get_name(), 'bus_zone': spot.get_bus_id()}
+                        val.set_accomondation(acc_details)
+                        uni.set_accommodation_id(spot.get_acc_id)
+                        spot.reduce_capacity(1)
         for uni in bus_assigned_universities:
             for val in uni.get_participant_list():
                 return_object.append(val.__dict__)
@@ -122,23 +131,43 @@ def helper_WG_set_accommodations(acc_assigned, bus_assigned_universities):
                     spot.reduce_capacity(1)
 
 
+def match_on_remainders():
+    # need to fix this method!
+    unmatched_unis = [u for u in sorted_university if u.get_bus_id() == 0]
+    unmatched_buses = [u for u in sorted_bus if u.get_capacity() != 0]
+    remainder_list = []
+    for bus in unmatched_buses:
+        for uni in unmatched_unis:
+            temp_sum = bus.get_capacity() - uni.get_participant_capacity()
+            pair = {'uni': uni, 'bus': bus, 'remainder':temp_sum}
+            remainder_list.append(pair)
+    rem = remainder_list[len(remainder_list)-1].get('remainder')
+    uni = remainder_list[len(remainder_list) - 1].get('uni')
+    bus = remainder_list[len(remainder_list) - 1].get('bus')
+    uni.set_new_capacity(bus.get_capacity())
+    uni.set_bus_id(bus.get_id())
+    bus.reduce_capacity(bus.get_capacity())
+    sorted_university.append(UniversityGroups(uni.get_university_id(), uni.get_university_name(), abs(rem)))
+
+
+def derivitive_match_WG():
+    unassigned_buses = match_unassigned()
+    for bus in unassigned_buses:
+        possible_unis = [u for u in sorted_university if u.get_bus_id() == 0 and u.get_participant_capacity() < bus.get_capacity()]
+        if possible_unis:
+            optimal_combinations(bus, possible_unis)
+    available_buses = [b for b in sorted_bus if b.get_capacity() > 0]
+
+
 def set_WG_accommodations():
     return_object = list()
-    un_matched_unis = [u for u in sorted_university if u.get_bus_id() == 0]
-    un_matched_bus = [u for u in sorted_bus if u.get_capacity() == 0]
-    for uni in un_matched_unis:
-        print('is this eval', uni)
-
     for i in range(1, 4):
         bus_assigned_universities = [u for u in sorted_university if u.get_bus_id() == i]
         acc_assigned = [u for u in accommodation_list if u.get_bus_id() == i]
-        helper_WG_set_accommodations(acc_assigned, bus_assigned_universities)
-
+        helper_set_accommodations(acc_assigned, bus_assigned_universities)
         for uni in bus_assigned_universities:
-
             for val in uni.get_participant_list():
                 return_object.append(val.__dict__)
-                file.write(str(val) + '\n')
     return return_object
 
 
@@ -159,6 +188,7 @@ def index():
     json_block = {'data': final_set, 'unassigned_data': unassigned_information}
     return json.dumps(json_block)
 
+
 @app.route('/with_wg', methods=['POST'])
 def with_WG():
     global accommodation_list
@@ -175,22 +205,18 @@ def with_WG():
                                              {"university": "University of Tuebingen", "capacity": 6}]
     )
     initial_matcher()
-    unassigned_information = derivitive_match()
+    derivitive_match_WG()
+    match_on_remainders()
     final_set = set_WG_accommodations()
-    available_buses = [b for b in sorted_bus if b.get_capacity() > 0]
-    unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
-    unassigned_accomodations = [u for u in accommodation_list if u.get_capacity() == 0]
-
-    for val in available_buses:
-        print("the busses that do have capacity", val)
-    for uni in unassigned_universities:
-        print("the people who are unassigned", uni)
-    print(len(unassigned_accomodations))
-
-    json_block = {'data': final_set, 'unassigned_data': unassigned_information}
-
+    for uni in sorted_university:
+        print('here', uni)
+    print('the size is ', len(final_set))
+    unmatched_unis = [u for u in sorted_university if u.get_bus_id() == 0]
+    uni_list = []
+    for uni in unmatched_unis:
+        uni_list.append(str(uni))
+    json_block = {'data': final_set, 'unassigned_data': uni_list}
     return json.dumps(json_block)
-
 
 
 if __name__ == "__main__":
