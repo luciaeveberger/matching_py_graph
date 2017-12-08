@@ -54,25 +54,28 @@ def derivitive_match():
         if possible_unis:
             optimal_combinations(bus, possible_unis)
     available_buses = [b for b in sorted_bus if b.get_capacity() > 0]
-
+    unassigned_acc = [u for u in accommodation_list if u.get_bus_id() == 0]
     total_unassigned_bz = sum(c.get_capacity() for c in available_buses)
     unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
     total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
     unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
-    file.write('3rd ITERATIONS: total people' + str(total_unassigned_people))
-    file.write("Unassigned busses:  \n")
-
     unassigned_dict = {'unassigned_busses': [],
                        'count_un_busses': total_unassigned_bz,
                        'unassigned_unis': [],
-                       'count_unassigned_people': total_unassigned_people }
+                       'count_unassigned_people': total_unassigned_people,
+                       'unassigned_accommodations': []
+                       }
     for val in unassigned_buses:
-
         unassigned_dict['unassigned_busses'].append(str(val))
 
+    print(accommodation_list)
+    for val in unassigned_acc:
+        demo = {'name': val.get_name(), 'capacity': val.get_capacity(), 'buz_zone':val.get_bus_id()}
+        unassigned_dict['unassigned_accommodations'].append(demo)
+
     for val in unassigned_universities:
-        print("I AM UNASSIGNED", val)
-        unassigned_dict['unassigned_unis'].append(str(val))
+        demo = {'university': val.get_university_name(), 'capacity': val.get_participant_capacity()}
+        unassigned_dict['unassigned_unis'].append(demo)
 
     return unassigned_dict
 
@@ -177,11 +180,20 @@ def index():
     global accommodation_list
     global sorted_bus
     global sorted_university
+
     data = request.get_json()
     sorted_groups = create_accommodations_objects(data.get('data').get('accommodations'))
     accommodation_list = sorted_groups[0]
     sorted_bus = sorted_groups[1]
     sorted_university = create_participants(data.get('data').get('participants'))
+
+    unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
+    total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
+    total_places = sum(c.get_capacity() for c in accommodation_list)
+    print('STARTING SUM:', total_unassigned_people)
+    print('STARTING PLACES:', total_places)
+
+
     initial_matcher()
     unassigned_information = derivitive_match()
     final_set = set_accommodations()
@@ -194,28 +206,35 @@ def with_WG():
     global accommodation_list
     global sorted_bus
     global sorted_university
-    sorted_bus = create_WG_objects()
-    accommodation_list = sorted_bus[0]
-    sorted_bus = sorted_bus[1]
-    sorted_university = create_participants([{"university": "TU Munich", "capacity": 12},
-                                             {"university": "LMU", "capacity": 12},
-                                             {"university": "Universita di Milano", "capacity": 12},
-                                             {"university": "Universita di Torino", "capacity": 11},
-                                             {"university": "Goethe University","capacity": 10},
-                                             {"university": "University of Tuebingen", "capacity": 6}]
-    )
+    data = request.get_json()
+
+    sorted_groups = create_accommodations_objects(data.get('data').get('accommodations'))
+    accommodation_list = sorted_groups[0]
+    sorted_bus = sorted_groups[1]
+    sorted_university = create_participants(data.get('data').get('participants'))
+
     initial_matcher()
     derivitive_match_WG()
     match_on_remainders()
     final_set = set_WG_accommodations()
+    unmatched_places = [u for u in accommodation_list if u.get_bus_id() == 0]
+    unmatched_busses = [u for u in sorted_bus if u.get_id() == 0]
+    unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
+
     for uni in sorted_university:
         print('here', uni)
-    print('the size is ', len(final_set))
+    total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
+
+    print('UNASSIGNED ', total_unassigned_people)
+    print('the size is accomodations', len(unmatched_busses))
+    print('the size of the busses', len(unmatched_places))
+
     unmatched_unis = [u for u in sorted_university if u.get_bus_id() == 0]
     uni_list = []
     for uni in unmatched_unis:
         uni_list.append(str(uni))
     json_block = {'data': final_set, 'unassigned_data': uni_list}
+
     return json.dumps(json_block)
 
 
