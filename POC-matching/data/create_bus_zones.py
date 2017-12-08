@@ -6,7 +6,7 @@ import pandas as pd
 
 def read_from_source():
     accomodations = pd.DataFrame.from_csv(
-        '/Users/luciaeve/Documents/EMSE/code/matching_py_graph/POC-matching/data/accomodation.csv', encoding='latin-1',
+        '/Users/luciaeve/Documents/EMSE/code/matching_py_graph/POC-matching/data/WG.csv', encoding='latin-1',
         index_col=None, sep=',')
     return accomodations
 
@@ -32,15 +32,23 @@ def create_accommodations_objects(accommodations):
     return sorted_accomodation_list, sorted_bus
 
 
-def create_dummy_data():
+def create_WG_objects():
     accommodations = read_from_source()
+    count = 1
+    accommodations_list = list()
+    for index, row in accommodations.iterrows():
+        university = Accommodation(row['buz_zone'], int(row['capacity']), count, row['name'])
+        accommodations_list.append(university)
+        count = count + 1
     accommodations_grouped_by_sum = accommodations.groupby('buz_zone').agg('sum')
     bus_zone = list()
 
     for index, row in accommodations_grouped_by_sum.iterrows():
-        bz1 = BusZone(index, row['capacity'])
+        bz1 = BusZone(int(index), int(row['capacity']))
         bus_zone.append(bz1)
 
     sorted_bus = sorted(bus_zone, key=lambda x: x.get_capacity(), reverse=True)
-    return sorted_bus
+
+    sorted_accomodation_list = sorted(accommodations_list, key=lambda x: x.get_capacity(), reverse=True)
+    return sorted_accomodation_list, sorted_bus
 

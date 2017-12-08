@@ -2,7 +2,7 @@
 from flask import Flask, request
 import json
 
-from data.create_bus_zones import create_accommodations_objects
+from data.create_bus_zones import create_accommodations_objects, create_WG_objects
 from data.create_participants import create_participants
 
 
@@ -65,6 +65,7 @@ def derivitive_match():
     assigned_unis = [u for u in sorted_university if u.get_bus_id() != 0]
     file.write('3rd ITERATIONS: total people' + str(total_unassigned_people))
     file.write("Unassigned busses:  \n")
+
     unassigned_dict = {'unassigned_busses': [],
                        'count_un_busses':total_unassigned_bz,
                        'unassigned_unis': [],
@@ -72,11 +73,6 @@ def derivitive_match():
     for val in unassigned_buses:
         file.write(str(val) + '\n')
         unassigned_dict['unassigned_busses'].append(str(val))
-
-    file.write("unassigned unis: \n")
-    for val in unassigned_universities:
-        file.write(str(val) + '\n')
-        unassigned_dict['unassigned_unis'].append(str(val))
     return unassigned_dict
 
 
@@ -113,7 +109,38 @@ def set_accommodations():
             for val in uni.get_participant_list():
                 return_object.append(val.__dict__)
                 file.write(str(val) + '\n')
-        return return_object
+    return return_object
+
+
+def helper_WG_set_accommodations(acc_assigned, bus_assigned_universities):
+    for spot in acc_assigned:
+        for uni in bus_assigned_universities:
+            for val in uni.get_participant_list():
+                if val.get_acc_id() == 0 and spot.get_capacity() > 0:
+                    acc_details = {'id': spot.get_acc_id(), 'name': spot.get_name(), 'bus_zone': spot.get_bus_id()}
+                    val.set_accomondation(acc_details)
+                    spot.reduce_capacity(1)
+
+
+def set_WG_accommodations():
+    return_object = list()
+    un_matched_unis = [u for u in sorted_university if u.get_bus_id() == 0]
+    un_matched_bus = [u for u in sorted_bus if u.get_capacity() == 0]
+    for uni in un_matched_unis:
+        print('is this eval', uni)
+
+    for i in range(1, 4):
+        bus_assigned_universities = [u for u in sorted_university if u.get_bus_id() == i]
+        acc_assigned = [u for u in accommodation_list if u.get_bus_id() == i]
+        helper_WG_set_accommodations(acc_assigned, bus_assigned_universities)
+
+        for uni in bus_assigned_universities:
+
+            for val in uni.get_participant_list():
+                return_object.append(val.__dict__)
+                file.write(str(val) + '\n')
+    return return_object
+
 
 
 @app.route('/', methods=['POST'])
@@ -122,7 +149,6 @@ def index():
     global sorted_bus
     global sorted_university
     data = request.get_json()
-    print(data)
     sorted_groups = create_accommodations_objects(data.get('data').get('accommodations'))
     accommodation_list = sorted_groups[0]
     sorted_bus = sorted_groups[1]
@@ -132,6 +158,39 @@ def index():
     final_set = set_accommodations()
     json_block = {'data': final_set, 'unassigned_data': unassigned_information}
     return json.dumps(json_block)
+
+@app.route('/with_wg', methods=['POST'])
+def with_WG():
+    global accommodation_list
+    global sorted_bus
+    global sorted_university
+    sorted_bus = create_WG_objects()
+    accommodation_list = sorted_bus[0]
+    sorted_bus = sorted_bus[1]
+    sorted_university = create_participants([{"university": "TU Munich", "capacity": 12},
+                                             {"university": "LMU", "capacity": 12},
+                                             {"university": "Universita di Milano", "capacity": 12},
+                                             {"university": "Universita di Torino", "capacity": 11},
+                                             {"university": "Goethe University","capacity": 10},
+                                             {"university": "University of Tuebingen", "capacity": 6}]
+    )
+    initial_matcher()
+    unassigned_information = derivitive_match()
+    final_set = set_WG_accommodations()
+    available_buses = [b for b in sorted_bus if b.get_capacity() > 0]
+    unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
+    unassigned_accomodations = [u for u in accommodation_list if u.get_capacity() == 0]
+
+    for val in available_buses:
+        print("the busses that do have capacity", val)
+    for uni in unassigned_universities:
+        print("the people who are unassigned", uni)
+    print(len(unassigned_accomodations))
+
+    json_block = {'data': final_set, 'unassigned_data': unassigned_information}
+
+    return json.dumps(json_block)
+
 
 
 if __name__ == "__main__":

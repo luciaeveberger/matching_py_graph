@@ -1,13 +1,92 @@
+3rd ITERATIONS: total people23Unassigned busses:  
+bus_id: 3, bus_capacity: 3
+bus_id: 2, bus_capacity: 10
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 6, 'name': 'via della Visitazione 4d Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 7, 'name': 'via della Visitazione 4d Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 11, 'name': 'Via Penegal 2 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 17, 'name': 'via montello 26 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 21, 'name': 'via della Torre 18 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 23, 'name': 'via Diaz 13 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 40, 'name': 'corso italia 12 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 43, 'name': 'corso italia 12 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 44, 'name': 'via della zecca 9b Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 45, 'name': 'Via della Torre 18 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 1, 'name': 'via Rosmini 67 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 2, 'name': 'via Rosmini 67 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 3, 'name': 'Via Rosmini 67 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 4, 'name': 'Via Rosmini 67 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 5, 'name': 'via Castelweinegg 21 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 8, 'name': 'via Carducci 2d Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 9, 'name': 'via Carducci 2d Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 10, 'name': 'via Carducci 2d Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 12, 'name': 'Via Leonardo da vinci 20 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 13, 'name': 'Via Leonardo da vinci 2/a Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 14, 'name': 'Via Vintler 5 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 16, 'name': 'via san Osvaldo 53 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 18, 'name': ' Prato Isarco 16 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 19, 'name': 'Batzenhaeuselgasse 5 appartement 14 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 20, 'name': 'via dei Portici  44 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 22, 'name': 'vicolo Sabbia 5 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 27, 'name': 'Annette von Menz Passage 6  Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 28, 'name': 'Viale Trieste 22/a Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 29, 'name': 'Viale Trieste 22/a Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 30, 'name': 'Via San Quirino 16 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 31, 'name': 'Via San Quirino 16 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 32, 'name': 'Via San Pietro 5/2 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 33, 'name': 'Vicolo Sabbia 7 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 35, 'name': 'Via Rosmini 55 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 36, 'name': 'Via Isarco 11/a Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 37, 'name': 'Via Isarco 11/a Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 38, 'name': 'Via rentsch 22b Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 41, 'name': 'via Carducci 12 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 42, 'name': 'via Carducci 12 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 46, 'name': 'Via Raffaello Sernesi 19 Bolzano', 'bus_zone': 3}
+3rd ITERATIONS: total people23Unassigned busses:  
+bus_id: 3, bus_capacity: 3
+bus_id: 2, bus_capacity: 10
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 6, 'name': 'via della Visitazione 4d Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 7, 'name': 'via della Visitazione 4d Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 11, 'name': 'Via Penegal 2 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 17, 'name': 'via montello 26 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 21, 'name': 'via della Torre 18 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 23, 'name': 'via Diaz 13 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 40, 'name': 'corso italia 12 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 43, 'name': 'corso italia 12 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 44, 'name': 'via della zecca 9b Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: Goethe University,bus_id:1,accommodation_details:{'id': 45, 'name': 'Via della Torre 18 Bolzano', 'bus_zone': 1}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 1, 'name': 'via Rosmini 67 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 2, 'name': 'via Rosmini 67 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 3, 'name': 'Via Rosmini 67 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 4, 'name': 'Via Rosmini 67 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 5, 'name': 'via Castelweinegg 21 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 8, 'name': 'via Carducci 2d Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 9, 'name': 'via Carducci 2d Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 10, 'name': 'via Carducci 2d Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 12, 'name': 'Via Leonardo da vinci 20 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 13, 'name': 'Via Leonardo da vinci 2/a Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 14, 'name': 'Via Vintler 5 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: TU Munich,bus_id:3,accommodation_details:{'id': 16, 'name': 'via san Osvaldo 53 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 18, 'name': ' Prato Isarco 16 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 19, 'name': 'Batzenhaeuselgasse 5 appartement 14 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 20, 'name': 'via dei Portici  44 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 22, 'name': 'vicolo Sabbia 5 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 27, 'name': 'Annette von Menz Passage 6  Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 28, 'name': 'Viale Trieste 22/a Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 29, 'name': 'Viale Trieste 22/a Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 30, 'name': 'Via San Quirino 16 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 31, 'name': 'Via San Quirino 16 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 32, 'name': 'Via San Pietro 5/2 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 33, 'name': 'Vicolo Sabbia 7 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: LMU,bus_id:3,accommodation_details:{'id': 35, 'name': 'Via Rosmini 55 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 36, 'name': 'Via Isarco 11/a Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 37, 'name': 'Via Isarco 11/a Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 38, 'name': 'Via rentsch 22b Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 41, 'name': 'via Carducci 12 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 42, 'name': 'via Carducci 12 Bolzano', 'bus_zone': 3}
+university_id: 2,uni_name: University of Tuebingen,bus_id:3,accommodation_details:{'id': 46, 'name': 'Via Raffaello Sernesi 19 Bolzano', 'bus_zone': 3}
 3rd ITERATIONS: total people62Unassigned busses:  
 bus_id: 1, bus_capacity: 1
 bus_id: 2, bus_capacity: 5
-unassigned unis: 
-university: TU Munich,bus_id: 0,capacity: 12,accom_id: 0
-university: LMU,bus_id: 0,capacity: 12,accom_id: 0
-university: Universita di Milano,bus_id: 0,capacity: 11,accom_id: 0
-university: Universita di Torino,bus_id: 0,capacity: 11,accom_id: 0
-university: Goethe University,bus_id: 0,capacity: 10,accom_id: 0
-university: University of Tuebingen,bus_id: 0,capacity: 6,accom_id: 0
 university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
 university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
 university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
@@ -198,383 +277,134 @@ university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 6,
 university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 6, 'name': 'RAINERUM', 'bus_zone': 1}
 university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 6, 'name': 'RAINERUM', 'bus_zone': 1}
 university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 6, 'name': 'RAINERUM', 'bus_zone': 1}
-3rd ITERATIONS: total people62Unassigned busses:  
-bus_id: 1, bus_capacity: 1
-bus_id: 2, bus_capacity: 5
-unassigned unis: 
-university: TU Munich,bus_id: 0,capacity: 12,accom_id: 0
-university: LMU,bus_id: 0,capacity: 12,accom_id: 0
-university: Universita di Milano,bus_id: 0,capacity: 11,accom_id: 0
-university: Universita di Torino,bus_id: 0,capacity: 11,accom_id: 0
-university: Goethe University,bus_id: 0,capacity: 10,accom_id: 0
-university: University of Tuebingen,bus_id: 0,capacity: 6,accom_id: 0
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 6, 'name': 'RAINERUM', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 6, 'name': 'RAINERUM', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 6, 'name': 'RAINERUM', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 6, 'name': 'RAINERUM', 'bus_zone': 1}
-university_id: 2,uni_name: Nordakademie,bus_id:1,accommodation_details:{'id': 6, 'name': 'RAINERUM', 'bus_zone': 1}
-3rd ITERATIONS: total people62Unassigned busses:  
-bus_id: 1, bus_capacity: 1
-bus_id: 2, bus_capacity: 5
-unassigned unis: 
-university: TU Munich,bus_id: 0,capacity: 12,accom_id: 0
-university: LMU,bus_id: 0,capacity: 12,accom_id: 0
-university: Universita di Milano,bus_id: 0,capacity: 11,accom_id: 0
-university: Universita di Torino,bus_id: 0,capacity: 11,accom_id: 0
-university: Goethe University,bus_id: 0,capacity: 10,accom_id: 0
-university: University of Tuebingen,bus_id: 0,capacity: 6,accom_id: 0
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: WHU,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Bologna,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 7, 'name': 'GALILEI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Trento,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: ESB,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 8, 'name': 'CARDUCCI', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: University of Bayreuth,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 2, 'name': 'UNICITY', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
-university_id: 2,uni_name: Universita di Genova,bus_id:1,accommodation_details:{'id': 10, 'name': 'RIGLER', 'bus_zone': 1}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Johannes Gutenberg Universitat Mainz,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Universita di Sassari,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 9, 'name': 'SALETTA', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: Zeppelin University,bus_id:2,accommodation_details:{'id': 5, 'name': 'SALEETA_HSB', 'bus_zone': 2}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: HEC Lausanne,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Universita di Verona,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 1, 'name': 'CARDUCCI', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt School,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Maastricht University,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt am Main,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt am Main,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt am Main,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt am Main,bus_id:3,accommodation_details:{'id': 3, 'name': 'HSB', 'bus_zone': 3}
+university_id: 2,uni_name: Frankfurt am Main,bus_id:3,accommodation_details:{'id': 4, 'name': 'HAUSSB', 'bus_zone': 3}

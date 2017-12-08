@@ -1,0 +1,10 @@
+{"data":
+{"accommodations": [{"name": "CARDUCCI", "capacity": 1, "buz_zone": 3}, {"name": "UNICITY", "capacity": 1, "buz_zone": 1}, {"name": "HSB", "capacity": 1, "buz_zone": 3}, {"name": "HAUSSB", "capacity": 1, "buz_zone": 3}, {"name": "SALEETA_HSB", "capacity": 1, "buz_zone": 2}, {"name": "RAINERUM", "capacity": 1, "buz_zone": 1}, {"name": "GALILEI", "capacity": 1, "buz_zone": 1}, {"name": "CARDUCCI", "capacity": 1, "buz_zone": 1}, {"name": "SALETTA", "capacity": 1, "buz_zone": 2}, {"name": "RIGLER", "capacity": 1, "buz_zone": 1}]}}
+
+[
+{"university": "TU Munich", "capacity": 12},
+{"university": "LMU", "capacity": 12},
+{"university": "Universita di Milano", "capacity": 12},
+{"university": "Universita di Torino", "capacity": 11},
+{"university":"Goethe University","capacity": 10},
+{"university":"University of Tuebingen","capacity": 6}]
