@@ -74,7 +74,7 @@ def derivitive_match():
         unassigned_dict['unassigned_accommodations'].append(demo)
 
     for val in unassigned_universities:
-        demo = {'university': val.get_university_name(), 'capacity': val.get_participant_capacity()}
+        demo = {'id': val.get_university_id(), 'university': val.get_university_name(), 'capacity': val.get_participant_capacity()}
         unassigned_dict['unassigned_unis'].append(demo)
 
     return unassigned_dict
@@ -214,7 +214,7 @@ def with_WG():
     global sorted_bus
     global sorted_university
     data = request.get_json()
-    print(data)
+
     sorted_groups = create_accommodations_objects(data.get('data').get('accommodations'))
     accommodation_list = sorted_groups[0]
     sorted_bus = sorted_groups[1]
