@@ -12,11 +12,12 @@ def read_from_source():
 
 
 def create_accommodations_objects(accommodations):
+    print(accommodations)
     accommodations = pd.DataFrame(accommodations)
     accommodations_list = list()
-    count = 1
+    count = 0
     for index, row in accommodations.iterrows():
-        university = Accommodation(row['buz_zone'], int(row['capacity']), count, row['name'])
+        university = Accommodation(row['buz_zone'], int(row['capacity']), row['id'], row['name'])
         accommodations_list.append(university)
         count = count + 1
     accommodations_grouped_by_sum = accommodations.groupby('buz_zone').agg('sum')

@@ -106,13 +106,16 @@ def helper_set_accommodations(acc_assigned, bus_assigned_universities):
 
 def set_accommodations():
     return_object = list()
+
     for i in range(1, 4):
         bus_assigned_universities = [u for u in sorted_university if u.get_bus_id() == i]
-        acc_assigned = [u for u in accommodation_list if u.get_bus_id() == i]
+        acc_assigned = [u for u in accommodation_list if int(u.get_bus_id()) == i]
+
         for spot in acc_assigned:
             for uni in bus_assigned_universities:
                 for val in uni.get_participant_list():
                     if val.get_acc_id() == 0 and spot.get_capacity() > 0:
+                        print(spot)
                         acc_details = {'id': spot.get_acc_id(), 'name': spot.get_name(), 'bus_zone': spot.get_bus_id()}
                         val.set_accomondation(acc_details)
                         uni.set_accommodation_id(spot.get_acc_id)
@@ -166,7 +169,7 @@ def set_WG_accommodations():
     return_object = list()
     for i in range(1, 4):
         bus_assigned_universities = [u for u in sorted_university if u.get_bus_id() == i]
-        acc_assigned = [u for u in accommodation_list if u.get_bus_id() == i]
+        acc_assigned = [u for u in accommodation_list if int(u.get_bus_id()) == i]
         helper_set_accommodations(acc_assigned, bus_assigned_universities)
         for uni in bus_assigned_universities:
             for val in uni.get_participant_list():
@@ -182,8 +185,12 @@ def index():
     global sorted_university
 
     data = request.get_json()
+    print(json.dumps(data))
     sorted_groups = create_accommodations_objects(data.get('data').get('accommodations'))
     accommodation_list = sorted_groups[0]
+
+    for val in accommodation_list:
+        print(val)
     sorted_bus = sorted_groups[1]
     sorted_university = create_participants(data.get('data').get('participants'))
 
@@ -207,7 +214,7 @@ def with_WG():
     global sorted_bus
     global sorted_university
     data = request.get_json()
-
+    print(data)
     sorted_groups = create_accommodations_objects(data.get('data').get('accommodations'))
     accommodation_list = sorted_groups[0]
     sorted_bus = sorted_groups[1]
