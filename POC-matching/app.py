@@ -67,12 +67,9 @@ def derivitive_match():
                        }
     for val in unassigned_buses:
         unassigned_dict['unassigned_busses'].append(str(val))
-
-    print(accommodation_list)
     for val in unassigned_acc:
         demo = {'name': val.get_name(), 'capacity': val.get_capacity(), 'buz_zone':val.get_bus_id()}
         unassigned_dict['unassigned_accommodations'].append(demo)
-
     for val in unassigned_universities:
         demo = {'id': val.get_university_id(), 'university': val.get_university_name(), 'capacity': val.get_participant_capacity()}
         unassigned_dict['unassigned_unis'].append(demo)
@@ -176,6 +173,10 @@ def set_WG_accommodations():
                 return_object.append(val.__dict__)
     return return_object
 
+
+@app.route('/', methods=['GET'])
+def init():
+    return 'I am up!'
 
 
 @app.route('/', methods=['POST'])
