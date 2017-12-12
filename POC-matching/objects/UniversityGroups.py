@@ -2,7 +2,7 @@ from .Participant import Participant
 
 
 class UniversityGroups:
-    def __init__(self, _university_id, _university, _participant_count, is_split=None):
+    def __init__(self, _university_id, _university, _participant_count):
         self._university_id = _university_id
         self._university = _university
         self._participant_count = _participant_count
@@ -10,7 +10,6 @@ class UniversityGroups:
         self._accommodation_id = 0
         self._accommodation_name = ''
         self._list_of_participants = list()
-        self.is_split = False
 
     def create_participant_list(self):
         for i in range(self._participant_count):
