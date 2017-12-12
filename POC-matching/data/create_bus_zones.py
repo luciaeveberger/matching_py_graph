@@ -12,7 +12,6 @@ def read_from_source():
 
 
 def create_accommodations_objects(accommodations):
-    print(accommodations)
     accommodations = pd.DataFrame(accommodations)
     accommodations_list = list()
     count = 0

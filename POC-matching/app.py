@@ -2,7 +2,7 @@
 from flask import Flask, request
 import json
 
-from data.create_bus_zones import create_accommodations_objects, create_WG_objects
+from data.create_bus_zones import create_accommodations_objects
 from data.create_participants import create_participants
 from objects.UniversityGroups import UniversityGroups
 
@@ -47,35 +47,12 @@ def match_unassigned():
     return total_remaining_buses
 
 
-def derivitive_match():
+def der_match():
     unassigned_buses = match_unassigned()
     for bus in unassigned_buses:
         possible_unis = [u for u in sorted_university if u.get_bus_id() == 0 and u.get_participant_capacity() < bus.get_capacity()]
         if possible_unis:
             optimal_combinations(bus, possible_unis)
-    available_buses = [b for b in sorted_bus if b.get_capacity() > 0]
-    unassigned_acc = [u for u in accommodation_list if u.get_bus_id() == 0]
-    total_unassigned_bz = sum(c.get_capacity() for c in available_buses)
-    unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
-    total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
-    unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
-    unassigned_dict = {'unassigned_busses': [],
-                       'count_un_busses': total_unassigned_bz,
-                       'unassigned_unis': [],
-                       'count_unassigned_people': total_unassigned_people,
-                       'unassigned_accommodations': []
-                       }
-    for val in unassigned_buses:
-        unassigned_dict['unassigned_busses'].append(str(val))
-    for val in unassigned_acc:
-        demo = {'name': val.get_name(), 'capacity': val.get_capacity(), 'buz_zone':val.get_bus_id()}
-        unassigned_dict['unassigned_accommodations'].append(demo)
-    for val in unassigned_universities:
-        demo = {'id': val.get_university_id(), 'university': val.get_university_name(), 'capacity': val.get_participant_capacity()}
-        unassigned_dict['unassigned_unis'].append(demo)
-
-    return unassigned_dict
-
 
 def optimal_combinations(bus_zone, uni_list):
     sorted_unis = sorted(uni_list, key=lambda x: x.get_participant_capacity(), reverse=True)
@@ -112,7 +89,6 @@ def set_accommodations():
             for uni in bus_assigned_universities:
                 for val in uni.get_participant_list():
                     if val.get_acc_id() == 0 and spot.get_capacity() > 0:
-                        print(spot)
                         acc_details = {'id': spot.get_acc_id(), 'name': spot.get_name(), 'bus_zone': spot.get_bus_id()}
                         val.set_accomondation(acc_details)
                         uni.set_accommodation_id(spot.get_acc_id)
@@ -186,26 +162,23 @@ def index():
     global sorted_university
 
     data = request.get_json()
-    print(json.dumps(data))
     sorted_groups = create_accommodations_objects(data.get('data').get('accommodations'))
     accommodation_list = sorted_groups[0]
-
-    for val in accommodation_list:
-        print(val)
     sorted_bus = sorted_groups[1]
     sorted_university = create_participants(data.get('data').get('participants'))
 
     unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
     total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
     total_places = sum(c.get_capacity() for c in accommodation_list)
-    print('STARTING SUM:', total_unassigned_people)
-    print('STARTING PLACES:', total_places)
-
 
     initial_matcher()
-    unassigned_information = derivitive_match()
+    der_match()
     final_set = set_accommodations()
-    json_block = {'data': final_set, 'unassigned_data': unassigned_information}
+    json_block = {'data': final_set,
+                  'unassigned_data': format_unmatched_data(),
+                  'starting_data': {'total_people': total_unassigned_people,
+                                    'total_places': total_places}
+                  }
     return json.dumps(json_block)
 
 
@@ -214,8 +187,8 @@ def with_WG():
     global accommodation_list
     global sorted_bus
     global sorted_university
-    data = request.get_json()
 
+    data = request.get_json()
     sorted_groups = create_accommodations_objects(data.get('data').get('accommodations'))
     accommodation_list = sorted_groups[0]
     sorted_bus = sorted_groups[1]
@@ -225,25 +198,31 @@ def with_WG():
     derivitive_match_WG()
     match_on_remainders()
     final_set = set_WG_accommodations()
-    unmatched_places = [u for u in accommodation_list if u.get_bus_id() == 0]
-    unmatched_busses = [u for u in sorted_bus if u.get_id() == 0]
-    unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
 
-    for uni in sorted_university:
-        print('here', uni)
-    total_unassigned_people = sum(c.get_participant_capacity() for c in unassigned_universities)
-
-    print('UNASSIGNED ', total_unassigned_people)
-    print('the size is accomodations', len(unmatched_busses))
-    print('the size of the busses', len(unmatched_places))
-
-    unmatched_unis = [u for u in sorted_university if u.get_bus_id() == 0]
-    uni_list = []
-    for uni in unmatched_unis:
-        uni_list.append(str(uni))
-    json_block = {'data': final_set, 'unassigned_data': uni_list}
-
+    json_block = {'data': final_set, 'unassigned_data': format_unmatched_data()}
     return json.dumps(json_block)
+
+def format_unmatched_data():
+
+    unmatched_places = [u for u in accommodation_list if u.get_bus_id() == 0]
+    unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
+    unmatched_unis = [u for u in sorted_university if u.get_bus_id() == 0]
+    unassigned_response = {'total_unassigned_participants':
+                                sum(c.get_participant_capacity() for c in unassigned_universities),
+                           'total_unassigned_accommodations':
+                                sum(c.get_participant_capacity() for c in unmatched_places),
+                           'unassigned_participants': [],
+                           'unassigned_accommodations': []}
+
+    for uni in unmatched_unis:
+        unassigned_response['unassigned_participants'].append(str(uni))
+
+    for places in unmatched_places:
+        unassigned_response['unassigned_accommodations'].append(str(places))
+
+    return unassigned_response
+
+
 
 
 if __name__ == "__main__":
