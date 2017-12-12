@@ -220,7 +220,6 @@ def format_unmatched_data():
                            'unassigned_accommodations': []}
 
     for uni in unmatched_unis:
-        print(uni.get_university_id())
         create_uni = {'id': uni.get_university_id(), 'university': uni.get_university_name(), 'capacity': uni.get_participant_capacity()}
         unassigned_response['unassigned_participants'].append(create_uni)
     for places in unmatched_places:
