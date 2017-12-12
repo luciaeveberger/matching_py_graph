@@ -120,13 +120,14 @@ def match_on_remainders():
             temp_sum = bus.get_capacity() - uni.get_participant_capacity()
             pair = {'uni': uni, 'bus': bus, 'remainder':temp_sum}
             remainder_list.append(pair)
-    rem = remainder_list[len(remainder_list)-1].get('remainder')
-    uni = remainder_list[len(remainder_list) - 1].get('uni')
-    bus = remainder_list[len(remainder_list) - 1].get('bus')
-    uni.set_new_capacity(bus.get_capacity())
-    uni.set_bus_id(bus.get_id())
-    bus.reduce_capacity(bus.get_capacity())
-    sorted_university.append(UniversityGroups(uni.get_university_id(), uni.get_university_name(), abs(rem)))
+    if len(remainder_list) != 0:
+        rem = remainder_list[len(remainder_list)-1].get('remainder')
+        uni = remainder_list[len(remainder_list) - 1].get('uni')
+        bus = remainder_list[len(remainder_list) - 1].get('bus')
+        uni.set_new_capacity(bus.get_capacity())
+        uni.set_bus_id(bus.get_id())
+        bus.reduce_capacity(bus.get_capacity())
+        sorted_university.append(UniversityGroups(uni.get_university_id(), uni.get_university_name(), abs(rem)))
 
 
 def derivitive_match_WG():
@@ -141,7 +142,7 @@ def derivitive_match_WG():
 def set_WG_accommodations():
     return_object = list()
     for i in range(1, 4):
-        bus_assigned_universities = [u for u in sorted_university if u.get_bus_id() == i]
+        bus_assigned_universities = [u for u in sorted_university if int(u.get_bus_id()) == i]
         acc_assigned = [u for u in accommodation_list if int(u.get_bus_id()) == i]
         helper_set_accommodations(acc_assigned, bus_assigned_universities)
         for uni in bus_assigned_universities:
@@ -161,7 +162,9 @@ def index():
     global sorted_bus
     global sorted_university
 
+
     data = request.get_json()
+    print(data)
     sorted_groups = create_accommodations_objects(data.get('data').get('accommodations'))
     accommodation_list = sorted_groups[0]
     sorted_bus = sorted_groups[1]
@@ -189,21 +192,23 @@ def with_WG():
     global sorted_university
 
     data = request.get_json()
+    print(data)
     sorted_groups = create_accommodations_objects(data.get('data').get('accommodations'))
     accommodation_list = sorted_groups[0]
     sorted_bus = sorted_groups[1]
     sorted_university = create_participants(data.get('data').get('participants'))
+    print(sorted_university)
 
     initial_matcher()
     derivitive_match_WG()
     match_on_remainders()
-    final_set = set_WG_accommodations()
 
+    final_set = set_WG_accommodations()
     json_block = {'data': final_set, 'unassigned_data': format_unmatched_data()}
     return json.dumps(json_block)
 
-def format_unmatched_data():
 
+def format_unmatched_data():
     unmatched_places = [u for u in accommodation_list if u.get_bus_id() == 0]
     unassigned_universities = [u for u in sorted_university if u.get_bus_id() == 0]
     unmatched_unis = [u for u in sorted_university if u.get_bus_id() == 0]
@@ -215,11 +220,11 @@ def format_unmatched_data():
                            'unassigned_accommodations': []}
 
     for uni in unmatched_unis:
-        unassigned_response['unassigned_participants'].append(str(uni))
-
+        print(uni.get_university_id())
+        create_uni = {'id': uni.get_university_id(), 'university': uni.get_university_name(), 'capacity': uni.get_participant_capacity()}
+        unassigned_response['unassigned_participants'].append(create_uni)
     for places in unmatched_places:
         unassigned_response['unassigned_accommodations'].append(str(places))
-
     return unassigned_response
 
 
